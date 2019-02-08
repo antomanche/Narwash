@@ -31,9 +31,10 @@ public class Adaptador extends BaseAdapter {
         final View vista = inflater.inflate(R.layout.elemento_lista,null);
 
         TextView titulo = (TextView) vista.findViewById(R.id.tvTitulo);
-       // TextView descripcion = (TextView) vista.findViewById(R.id.tvdur);
+        //TextView descripcion = (TextView) vista.findViewById(R.id.tvdur);
         ImageView imagen = (ImageView) vista.findViewById(R.id.imagecapilla);
         titulo.setText(datos [i] [0]);
+
         //descripcion.setText(datos [i] [1]);
         imagen.setImageResource(datosImg[i]);
 
