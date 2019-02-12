@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "582249641498",
+    "firebase_url": "https://narwashdefinitivo.firebaseio.com",
+    "project_id": "narwashdefinitivo",
+    "storage_bucket": "narwashdefinitivo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582249641498:android:1d2b1c4c96472195",
+        "android_client_info": {
+          "package_name": "com.example.listview_narwash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582249641498-movoa83mm4ud1noukd41pgfb3fehg32h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.listview_narwash",
+            "certificate_hash": "8512c6108ce2f6106a32720b4d971443864ed757"
+          }
+        },
+        {
+          "client_id": "582249641498-g9526b9qt36ofv2v3c2rrg48liltsi3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGpektTxwZbIKdHFNFARyrfPoLSR7flVI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582249641498-g9526b9qt36ofv2v3c2rrg48liltsi3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
