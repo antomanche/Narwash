@@ -13,7 +13,7 @@ public class Lista extends AppCompatActivity {
             {"Lago","mazo hojas tu"},
             {"Lavanda","mazo morado todo"},
             {"Mar","mazo mojado el mar"},
-            {"Montana","mazo frio"},
+            {"Montaña","mazo frio"},
             {"Pico","mazo pisos picados"},
             {"Puente","mazo levadizo"},
     };
