@@ -1,6 +1,7 @@
 
 package com.example.listview_narwash;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,15 +29,17 @@ public class Login extends AppCompatActivity {
     Button btnRegistrar, btnLogin;
     private ProgressDialog progressDialog;
 
+    Context contexto;
+
     //Declaramos un objeto firebaseAuth
     private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppTheme);
+        //setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_in);
-
+        contexto = this;
         //inicializamos el objeto firebaseAuth
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -63,6 +67,9 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 loguearUsuario();
+                /*lista = (ListView) findViewById(R.id.milista);
+
+                lista.setAdapter(new Adaptador(contexto,datos,datosImg));*/
             }
 
         };
@@ -144,7 +151,7 @@ public class Login extends AppCompatActivity {
                             int pos = email.indexOf("@");
                             String user = email.substring(0, pos);
                             Toast.makeText(Login.this, "Bienvenido: " + TextEmail.getText(), Toast.LENGTH_LONG).show();
-                            Intent intencion = new Intent(getApplication(), MainActivity.class);
+                            Intent intencion = new Intent(getApplication(), Lista.class);
                             startActivity(intencion);
 
 

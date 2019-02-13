@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+
+    android:background="#FFA85A">
 
     <Button
         android:id="@+id/BtnRegistrar"
@@ -13,9 +14,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="112dp"
         android:layout_marginEnd="8dp"
-        android:background="@android:color/background_light"
+        android:background="#0D93B2"
         android:shadowColor="@color/colorPrimary"
-        android:text="LOG IN"
+        android:text="SIGN IN"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.611"
@@ -31,7 +32,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="252dp"
-        android:background="@android:color/background_light"
+        android:background="#0D93B2"
         android:shadowColor="@color/colorPrimary"
         android:text="LOG IN"
 
@@ -45,18 +46,19 @@
 
     <TextView
         android:id="@+id/mytitle"
-        android:layout_width="361dp"
+        android:layout_width="327dp"
         android:layout_height="81dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:fontFamily="@font/"
+        android:fontFamily="@font/dayslater"
         android:text="NARWASH"
         android:textColor="@color/colorSecundarioDark"
         android:textSize="69dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,7 +69,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="216dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="#FFA85A"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.687"
@@ -83,11 +85,11 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:ems="10"
-            android:hint="Name"
+            android:hint="Ingresa tu email: "
             android:inputType="textPersonName"
             android:textColorHighlight="@color/colorPrimaryDark"
-            android:textColorHint="@android:color/darker_gray"
-            android:textSize="25sp"
+            android:textColorHint="#0D93B2"
+            android:textSize="25dp"
             app:layout_constraintBottom_toTopOf="@+id/TxtPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -102,12 +104,14 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:ems="10"
-            android:hint="password"
+            android:hint="Ingresa tu contraseña: "
             android:inputType="textPassword"
-
+            android:textColorHint="#0D93B2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:textSize="25dp"
             tools:layout_editor_absoluteY="293dp" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
