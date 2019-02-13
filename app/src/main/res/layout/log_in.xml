@@ -54,7 +54,7 @@
         android:layout_marginRight="8dp"
         android:fontFamily="@font/dayslater"
         android:text="NARWASH"
-        android:textColor="@color/colorSecundarioDark"
+        android:textColor="#2E2EFE"
         android:textSize="69dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
