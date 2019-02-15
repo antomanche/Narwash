@@ -28,14 +28,13 @@ public class Adaptador extends BaseAdapter {
     @Override
     public View getView(int i, View convertView, ViewGroup parent) {
 
-        final View vista = inflater.inflate(R.layout.elemento_lista,null);
-
+        final View vista = inflater.inflate(R.layout.elemento_lista2,null);
+        //TextView descripcion = (TextView) vista.findViewById(R.id.tvDescripcion);
         TextView titulo = (TextView) vista.findViewById(R.id.tvTitulo);
-        //TextView descripcion = (TextView) vista.findViewById(R.id.tvdur);
+
         ImageView imagen = (ImageView) vista.findViewById(R.id.imagecapilla);
         titulo.setText(datos [i] [0]);
-
-        //descripcion.setText(datos [i] [1]);
+       // descripcion.setText(datos [i] [1]);
         imagen.setImageResource(datosImg[i]);
 
         imagen.setTag(i);

@@ -6,6 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VisorImagen">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="650dp"
+        android:width="130dp"
+        android:text="Localización"
+
+        />
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="320dp">
@@ -39,19 +51,8 @@
 
     </FrameLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Localización"
-        android:layout_marginTop="650dp"
-        android:layout_marginLeft="250dp"
-        android:width="130dp"
-
-        />
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvDescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"

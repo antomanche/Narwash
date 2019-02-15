@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "582249641498-8iq99sgk2oho5c33lbudvivfaa3oc115.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.listview_narwash",
+            "certificate_hash": "016de2e97699f2147471bf6fcf80f1acf9d5c09d"
+          }
+        },
+        {
           "client_id": "582249641498-g9526b9qt36ofv2v3c2rrg48liltsi3d.apps.googleusercontent.com",
           "client_type": 3
         }

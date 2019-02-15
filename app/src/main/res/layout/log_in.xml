@@ -9,7 +9,7 @@
 
     <Button
         android:id="@+id/BtnRegistrar"
-        android:layout_width="377dp"
+        android:layout_width="match_parent"
         android:layout_height="69dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="112dp"
@@ -26,7 +26,7 @@
 
     <Button
         android:id="@+id/BtnLogin"
-        android:layout_width="377dp"
+        android:layout_width="match_parent"
         android:layout_height="69dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -64,7 +64,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="379dp"
+        android:layout_width="match_parent"
         android:layout_height="165dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="216dp"
@@ -85,6 +85,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:ems="10"
+            android:text="alex@gmail.com"
             android:hint="email"
             android:inputType="textPersonName"
             android:textColorHighlight="#B45F04"
@@ -105,6 +106,7 @@
             android:layout_marginEnd="8dp"
             android:ems="10"
             android:hint="contraseña"
+            android:text="123456"
             android:inputType="textPassword"
             android:textColorHint="#0D93B2"
             app:layout_constraintEnd_toEndOf="parent"

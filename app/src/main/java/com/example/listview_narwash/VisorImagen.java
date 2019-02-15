@@ -12,6 +12,7 @@ public class VisorImagen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_visor_imagen);
+        TextView tvDescr = (TextView) findViewById(R.id.tvDescripcion);
         TextView tvTitulo = (TextView) findViewById(R.id.tvTituloseg);
         ImageView img = (ImageView) findViewById(R.id.imCompleta);
 

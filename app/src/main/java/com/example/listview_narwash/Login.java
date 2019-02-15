@@ -148,6 +148,8 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         //checking if success
                         if (task.isSuccessful()) {
+                            Firebase.grabarSaludo();
+                            Firebase.recuperarDatos();
                             int pos = email.indexOf("@");
                             String user = email.substring(0, pos);
                             Toast.makeText(Login.this, "Bienvenido: " + TextEmail.getText(), Toast.LENGTH_LONG).show();
