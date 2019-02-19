@@ -9,18 +9,20 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class Adaptador extends BaseAdapter {
 
     private static LayoutInflater inflater = null;
 
     Context  contexto;
 
-    String [] [] datos;
+    ArrayList<Evento> lista_eventos;
     int[] datosImg;
 
-    public Adaptador(Context contexto, String [] [] datos, int [] imagenes){
+    public Adaptador(Context contexto, ArrayList<Evento> lista_eventos, int [] imagenes){
         this.contexto = contexto;
-        this.datos = datos;
+        this.lista_eventos = lista_eventos;
         this.datosImg = imagenes;
         inflater = (LayoutInflater)contexto.getSystemService(contexto.LAYOUT_INFLATER_SERVICE);
     }
@@ -33,7 +35,7 @@ public class Adaptador extends BaseAdapter {
         TextView titulo = (TextView) vista.findViewById(R.id.tvTitulo);
 
         ImageView imagen = (ImageView) vista.findViewById(R.id.imagecapilla);
-        titulo.setText(datos [i] [0]);
+        titulo.setText(lista_eventos.get(i).getTitulo());
        // descripcion.setText(datos [i] [1]);
         imagen.setImageResource(datosImg[i]);
 

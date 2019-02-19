@@ -10,6 +10,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+
 import static android.support.constraint.Constraints.TAG;
 
 public class Firebase {
@@ -18,10 +22,11 @@ public class Firebase {
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
-        Evento e=new Evento("Cala la Rijana2",36.709641, -3.390952);
+        Evento e=new Evento("Cala la Rijana",36.709641, -3.390952);
         myRef.child("Evento").push().setValue(e);
     }
     public static void recuperarDatos(){
+        final ArrayList<Evento> lista_eventos = new ArrayList<>();
 
         ValueEventListener postListener = new ValueEventListener() {
             @Override
@@ -35,6 +40,7 @@ public class Firebase {
                     String clave=e.getKey();
                     Evento c = e.getValue(Evento.class);
                     Log.v("evento",clave+" "+c.getTitulo()+" "+c.getLatitud()+" "+c.getLongitud());
+                    lista_eventos.add(c);
 
                     i++;
                 }

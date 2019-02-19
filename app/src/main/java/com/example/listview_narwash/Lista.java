@@ -3,9 +3,13 @@ package com.example.listview_narwash;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class Lista extends AppCompatActivity {
     ListView lista;
+    ArrayList<Evento> lista_eventos;
     String [] [] datos = {
             {"Cala La Rijana","Entre las mejores playas de la Costa Tropical de Granada, a pesar de que se llega a ella a través de un corto túnel. Aislada y de pequeñas dimensiones, apenas unos 250 metros de una fina línea de arena oscura y bolos, disfruta de un mar azul y cristalino. Abrazada por las grandes rocas que llegan justo al mar, se caracteriza por las ruinas de una antigua torre vigía que brinda uno de los paisajes más reconocibles del litoral de la provincia. Carece por completo de equipamientos."},
             {"Playa de la Calahonda","Perteneciente al pequeño municipio de Motril, la de Calahonda es una de las playas favoritas de muchos veraneantes para disfrutar de la Costa Tropical en la provincia de Granada. Es una playa de arena gruesa y oscura y aguas trasparentes bastante grande bien equipada y con acceso adaptados. Hay que tener especial cuidado con los niños y personas que no sepan nadar ya que la entrada a la playa es abrupta. "},
@@ -23,9 +27,10 @@ public class Lista extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       lista = (ListView) findViewById(R.id.milista);
+        lista = (ListView) findViewById(R.id.milista);
+        TextView tvTitulo = findViewById(R.id.tvTitulo);
 
-        lista.setAdapter(new Adaptador(this,datos,datosImg));
+        lista.setAdapter(new Adaptador(this,lista_eventos,datosImg));
 
     }
 }
