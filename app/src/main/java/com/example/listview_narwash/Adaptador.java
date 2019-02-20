@@ -35,7 +35,7 @@ public class Adaptador extends BaseAdapter {
         TextView titulo = (TextView) vista.findViewById(R.id.tvTitulo);
 
         ImageView imagen = (ImageView) vista.findViewById(R.id.imagecapilla);
-        titulo.setText(lista_eventos.get(i).getTitulo());
+        //titulo.setText(lista_eventos.get(i).getTitulo());
        // descripcion.setText(datos [i] [1]);
         imagen.setImageResource(datosImg[i]);
 
