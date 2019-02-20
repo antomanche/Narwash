@@ -1,6 +1,5 @@
 package com.example.listview_narwash;
 
-
 import android.util.Log;
 import android.widget.TextView;
 
