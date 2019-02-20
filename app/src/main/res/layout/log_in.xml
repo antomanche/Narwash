@@ -9,43 +9,41 @@
 
     <Button
         android:id="@+id/BtnRegistrar"
-        android:layout_width="match_parent"
+        android:layout_width="345dp"
         android:layout_height="69dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="108dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/botonredondo"
+        android:background="@drawable/listviewredondo"
         android:shadowColor="@color/colorPrimary"
 
         android:text="SIGN IN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.407"
+        app:layout_constraintVertical_bias="0.299"
         tools:text="@string/registrar" />
 
     <Button
         android:id="@+id/BtnLogin"
-        android:layout_width="match_parent"
+        android:layout_width="345dp"
         android:layout_height="69dp"
         android:layout_marginStart="8dp"
 
         android:layout_marginEnd="8dp"
 
-        android:background="@drawable/botonredondo"
+        android:background="@drawable/listviewredondo"
 
         android:shadowColor="@color/colorPrimary"
         android:text="LOG IN"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintVertical_bias="0.17"
         tools:text="@string/registrar" />
 
     <TextView
@@ -77,7 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408">
+        app:layout_constraintVertical_bias="0.303">
 
         <EditText
             android:id="@+id/TxtEmail"
