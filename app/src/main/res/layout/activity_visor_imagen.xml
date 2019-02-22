@@ -36,7 +36,6 @@
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/verdana"
             android:textSize="32dp"
-            android:text="CAPILLA"
             android:textColor="@android:color/background_light" />
 
 
@@ -49,11 +48,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="350dp"
-        android:text="Entre las mejores playas de la Costa Tropical de Granada, a pesar de que se llega a ella a través de un corto túnel. Aislada y de pequeñas dimensiones, apenas unos 250 metros de una fina línea de arena oscura y bolos, disfruta de un mar azul y cristalino. Abrazada por las grandes rocas que llegan justo al mar, se caracteriza por las ruinas de una antigua torre vigía que brinda uno de los paisajes más reconocibles del litoral de la provincia. Carece por completo de equipamientos."
         android:textColor="#3B170B" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/botonlocalizacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -62,9 +60,9 @@
         android:layout_marginLeft="250dp"
 
         android:layout_marginTop="650dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginRight="69dp"
-        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="84dp"
         android:width="130dp"
         android:text="Localización" />
 
