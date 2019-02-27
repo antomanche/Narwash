@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:drawable="@drawable/ic_narwash" >
+        <target
+            android:name="narvalBig"
+            android:animation="@animator/animation" />
+        <target
+            android:name="narvalSmall"
+            android:animation="@animator/animation" />
+    </animated-vector>
+</selector>

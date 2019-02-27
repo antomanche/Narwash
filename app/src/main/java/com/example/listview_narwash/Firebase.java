@@ -16,14 +16,14 @@ import java.util.ArrayList;
 import static android.support.constraint.Constraints.TAG;
 
 public class Firebase {
-
+/*
    public static void grabarSaludo(){
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
         Evento e=new Evento("Cala la Rijana",36.709641, -3.390952);
         myRef.child("Evento").push().setValue(e);
-    }
+    }*/
     public static void recuperarDatos(){
         final ArrayList<Evento> lista_eventos = new ArrayList<>();
 
