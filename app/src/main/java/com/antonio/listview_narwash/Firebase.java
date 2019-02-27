@@ -16,7 +16,7 @@ import static android.support.constraint.Constraints.TAG;
 
 public class Firebase {
 
-   public static void grabarSaludo(){
+   /*public static void grabarSaludo(){
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
@@ -79,7 +79,7 @@ public class Firebase {
                ,"Playa Matalascañas",37.0123500, -6.5592700);
        myRef.child("Evento").push().setValue(eventoMatalascañas);
 
-    }
+    }*/
 
     public static void recuperarDatos(){
         final ArrayList<Evento> lista_eventos = new ArrayList<>();

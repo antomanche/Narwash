@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Narwash</string>
-    <string name="enter_email">Ingrese un email</string>
-    <string name="enter_password">Ingrese una contraseña</string>
+    <string name="enter_email"></string>
+    <string name="enter_password"></string>
     <string name="registrar">Registrar usuario</string>
     <string name="acceder">Acceder a mi cuenta</string>
     <string name="title_activity_maps">Map</string>
