@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.listview_narwash">
+    package="com.antonio.listview_narwash">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -31,17 +31,17 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name="com.antonio.listview_narwash.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".VisorImagen" />
+        <activity android:name="com.antonio.listview_narwash.VisorImagen" />
         <activity
-            android:name=".Login"
+            android:name="com.antonio.listview_narwash.Login"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
-            android:name=".Lista"
+            android:name="com.antonio.listview_narwash.Lista"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.antonio.listview_narwash.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

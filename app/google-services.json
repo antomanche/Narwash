@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:582249641498:android:1d2b1c4c96472195",
         "android_client_info": {
-          "package_name": "com.example.listview_narwash"
+          "package_name": "com.antonio.listview_narwash"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "582249641498-movoa83mm4ud1noukd41pgfb3fehg32h.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.listview_narwash",
+            "package_name": "com.antonio.listview_narwash",
             "certificate_hash": "8512c6108ce2f6106a32720b4d971443864ed757"
           }
         },
@@ -26,7 +26,7 @@
           "client_id": "582249641498-8iq99sgk2oho5c33lbudvivfaa3oc115.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.listview_narwash",
+            "package_name": "com.antonio.listview_narwash",
             "certificate_hash": "016de2e97699f2147471bf6fcf80f1acf9d5c09d"
           }
         },
