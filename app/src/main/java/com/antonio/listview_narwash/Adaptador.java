@@ -30,9 +30,16 @@ public class Adaptador extends BaseAdapter {
     @Override
     public View getView(int i, View convertView, ViewGroup parent) {
         final View vista = inflater.inflate(R.layout.elemento_lista2,null);
-        TextView titulo = (TextView) vista.findViewById(R.id.tvTitulo);
+        final View vistavisor = inflater.inflate(R.layout.activity_visor_imagen,null);
+        TextView tvdescrinterno = (TextView) vistavisor.findViewById(R.id.tvDescripcion) ;
+        TextView tvtitulo = (TextView) vista.findViewById(R.id.tvTitulo);
         ImageView imagen = (ImageView) vista.findViewById(R.id.imagecapilla);
-        
+        TextView titulointerno = (TextView) vistavisor.findViewById(R.id.tvTitulo);
+
+
+        tvtitulo.setText(lista_eventos.get(i).getTitulo());
+        titulointerno.setText(lista_eventos.get(0).getTitulo());
+
         imagen.setImageResource(datosImg[i]);
         imagen.setTag(i);
         imagen.setOnClickListener(new View.OnClickListener() {

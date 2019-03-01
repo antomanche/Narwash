@@ -29,7 +29,7 @@ public class Lista extends AppCompatActivity {
         recuperarTitulos();
         listavista = (ListView) findViewById(R.id.milista);
         TextView tvTitulo = findViewById(R.id.tvTitulo);
-        listavista.setAdapter(new Adaptador(this,lista_eventos,datosImg));
+       // listavista.setAdapter(new Adaptador(this,lista_eventos,datosImg));
         context = this;
 
     }
@@ -50,10 +50,6 @@ public class Lista extends AppCompatActivity {
                 }
                 //pasar arraylist al Adaptador del listview
                 listavista.setAdapter(new Adaptador(context,lista_eventosinterno,datosImg));
-
-                /*String titulotv = evento.getTitulo();
-                titulo = (TextView) findViewById(R.id.tvTitulo);
-                titulo.setText(titulotv);*/
             }
 
             @Override
