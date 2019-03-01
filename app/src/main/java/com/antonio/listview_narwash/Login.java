@@ -66,9 +66,9 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 loguearUsuario();
-                /*lista = (ListView) findViewById(R.id.milista);
+                /*listavista = (ListView) findViewById(R.id.milista);
 
-                lista.setAdapter(new Adaptador(contexto,datos,datosImg));*/
+                listavista.setAdapter(new Adaptador(contexto,datos,datosImg));*/
             }
 
         };
@@ -148,6 +148,7 @@ public class Login extends AppCompatActivity {
                         //checking if success
                         if (task.isSuccessful()) {
                             //Firebase.grabarSaludo();
+
                             Firebase.recuperarDatos();
                             int pos = email.indexOf("@");
                             String user = email.substring(0, pos);

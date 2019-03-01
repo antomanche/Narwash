@@ -30,10 +30,8 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="186dp"
         android:layout_marginEnd="8dp"
-
         android:layout_marginRight="8dp"
         android:fontFamily="@font/verdana"
-        android:text="TextView"
         android:textColor="#ffffff"
  />
 </FrameLayout>

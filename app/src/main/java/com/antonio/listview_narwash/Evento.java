@@ -1,47 +1,50 @@
 package com.antonio.listview_narwash;
 
 public class Evento {
-    private String Descripcion;
-    private String Titulo;
-    private Double Latitud;
-    private Double Longitud;
+    private String descripcion;
+    private String titulo;
+    private Double latitud;
+    private Double longitud;
 
     public Evento() {
     }
 
     public Evento(String descripcion, String titulo, Double latitud, Double longitud) {
-        this.Descripcion = descripcion;
-        Titulo = titulo;
-        Latitud = latitud;
-        Longitud = longitud;
+        this.descripcion = descripcion;
+        this.titulo = titulo;
+        this.latitud = latitud;
+        this.longitud = longitud;
     }
 
-    public String getDescripcion() { return Descripcion; }
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 
     public String getTitulo() {
-        return Titulo;
-    }
-
-    public Double getLatitud() {
-        return Latitud;
-    }
-
-    public Double getLongitud() {
-        return Longitud;
+        return titulo;
     }
 
     public void setTitulo(String titulo) {
-        Titulo = titulo;
+        this.titulo = titulo;
+    }
+
+    public Double getLatitud() {
+        return latitud;
     }
 
     public void setLatitud(Double latitud) {
-        Latitud = latitud;
+        this.latitud = latitud;
+    }
+
+    public Double getLongitud() {
+        return longitud;
     }
 
     public void setLongitud(Double longitud) {
-        Longitud = longitud;
-    }
-    public void setDescripcion(String descripcion) {
-        Descripcion = descripcion;
+        this.longitud = longitud;
     }
 }

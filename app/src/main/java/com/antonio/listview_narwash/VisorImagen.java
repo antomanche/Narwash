@@ -17,13 +17,13 @@ import com.google.firebase.database.ValueEventListener;
 
 public class VisorImagen extends AppCompatActivity {
     Button boton;
-    String [] [] datos;
     TextView tvDescr;
     TextView tvTitulo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_visor_imagen);
+
         boton = (Button) findViewById(R.id.botonlocalizacion);
         tvDescr = (TextView) findViewById(R.id.tvDescripcion);
         tvTitulo = (TextView) findViewById(R.id.tvTituloseg);
@@ -43,7 +43,10 @@ public class VisorImagen extends AppCompatActivity {
         }
 
     }
-    public void recuperarInformacion(){
+
+
+
+    public  void recuperarInformacion(){
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference();
 

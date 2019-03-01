@@ -38,7 +38,7 @@ public class Firebase {
        Evento eventoGenoveses=new Evento("Una bahía para un arenal de cine (por su belleza, pero también por haber sido escenario" +
                " de numerosas películas). La playa de los Genoveses, en Almería, está formada por dunas de arena fina y dorada salpicadas" +
                " por chumberas y pitas autóctonas. Es uno de los rincones más bellos del Parque Natural Cabo de Gata y, de hecho, acostumbra a " +
-               "aparecer siempre en la lista de las mejores playas de España. Está ubicada en el valle del Campillo del Genovés, un lugar sin" +
+               "aparecer siempre en la listavista de las mejores playas de España. Está ubicada en el valle del Campillo del Genovés, un lugar sin" +
                " apenas construcciones y sin carreteras asfaltadas que se conserva en su estado más puro. Se puede acceder andando desde el " +
                "núcleo urbano de San José. Sus aguas nos reciben en un abrazo calmo. No cuenta con equipamiento ni su acceso está adaptado para " +
                "personas con movilidad reducida."
@@ -115,22 +115,4 @@ public class Firebase {
         myRef.addValueEventListener(postListener);
 
     }
-
-    public void recuperarInformacion(){
-        final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference();
-
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Evento evento = dataSnapshot.getValue(Evento.class);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-
-        });
-     }
 }

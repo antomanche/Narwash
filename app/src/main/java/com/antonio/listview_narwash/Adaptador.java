@@ -29,16 +29,11 @@ public class Adaptador extends BaseAdapter {
 
     @Override
     public View getView(int i, View convertView, ViewGroup parent) {
-
         final View vista = inflater.inflate(R.layout.elemento_lista2,null);
-        //TextView descripcion = (TextView) vista.findViewById(R.id.tvDescripcion);
         TextView titulo = (TextView) vista.findViewById(R.id.tvTitulo);
-
         ImageView imagen = (ImageView) vista.findViewById(R.id.imagecapilla);
-        //titulo.setText(lista_eventos.get(i).getTitulo());
-       // descripcion.setText(datos [i] [1]);
+        
         imagen.setImageResource(datosImg[i]);
-
         imagen.setTag(i);
         imagen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,8 +43,6 @@ public class Adaptador extends BaseAdapter {
                 contexto.startActivity(visorImagen);
             }
         });
-
-
         return vista;
     }
 
