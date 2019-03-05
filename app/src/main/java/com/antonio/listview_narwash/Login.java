@@ -1,7 +1,9 @@
 
 package com.antonio.listview_narwash;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +12,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -53,6 +56,26 @@ public class Login extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.BtnLogin);
 
         progressDialog = new ProgressDialog(this);
+
+        ImageView logo = (ImageView) findViewById(R.id.LogoImagen);
+        logo.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
+                builder.setMessage("-El objetivo de la aplicación será informar a los usuarios de la situación que viven nuestras costas (Españolas) y educarlos para hacerles saber como pueden ayudar a mejorar la vida de la fauna costera y marítima.\n" +
+                        "\n" +
+                        "-También organizaremos eventos de recogida de basuras, educación sobre la fauna y cómo afecta los residuos a los animales y al ecosistema.");
+                builder.setTitle("VALORES");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
+            }
+        });
 
         //asociamos un oyente al evento clic del botón
         View.OnClickListener oyente_registrar=new View.OnClickListener() {

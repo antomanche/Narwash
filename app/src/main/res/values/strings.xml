@@ -5,4 +5,7 @@
     <string name="registrar">Registrar usuario</string>
     <string name="acceder">Acceder a mi cuenta</string>
     <string name="title_activity_maps">Map</string>
+    <string name="valores">-El objetivo de la aplicación será informar a los usuarios de la situación que viven nuestras costas (Españolas) y educarlos para hacerles saber como pueden ayudar a mejorar la vida de la fauna costera y marítima.
+        -También organizaremos eventos de recogida de basuras, educación sobre la fauna y cómo afecta los residuos a los animales y al ecosistema.</string>
+
 </resources>

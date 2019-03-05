@@ -38,7 +38,7 @@ public class Adaptador extends BaseAdapter {
 
 
         tvtitulo.setText(lista_eventos.get(i).getTitulo());
-        titulointerno.setText(lista_eventos.get(0).getTitulo());
+    //    titulointerno.setText(lista_eventos.get(0).getTitulo());
 
         imagen.setImageResource(datosImg[i]);
         imagen.setTag(i);
