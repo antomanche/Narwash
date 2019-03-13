@@ -43,27 +43,4 @@ public class VisorImagen extends AppCompatActivity {
 
     }
 
-    /*public  void recuperarInformacion(){
-        final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference();
-
-        ref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Evento evento = dataSnapshot.getValue(Evento.class);
-                String titulotv = evento.getTitulo();
-                String descripciontv = evento.getDescripcion();
-                tvDescr = (TextView) findViewById(R.id.tvDescripcion);
-                tvTitulo = (TextView) findViewById(R.id.tvTituloseg);
-                tvDescr.setText(descripciontv);
-                tvTitulo.setText(titulotv);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-
-        });
-    }*/
 }

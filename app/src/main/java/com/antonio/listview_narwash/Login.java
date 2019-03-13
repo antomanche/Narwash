@@ -30,7 +30,6 @@ public class Login extends AppCompatActivity {
     EditText TextPassword;
     Button btnRegistrar, btnLogin;
     private ProgressDialog progressDialog;
-
     Context contexto;
 
     //Declaramos un objeto firebaseAuth
@@ -44,19 +43,13 @@ public class Login extends AppCompatActivity {
         contexto = this;
         //inicializamos el objeto firebaseAuth
         firebaseAuth = FirebaseAuth.getInstance();
-
-
         mytitle = findViewById(R.id.mytitle);
         linerlayout = findViewById(R.id.linearLayout);
-
         TextEmail = findViewById(R.id.TxtEmail);
         TextPassword = findViewById(R.id.TxtPassword);
-
         btnRegistrar = findViewById(R.id.BtnRegistrar);
         btnLogin = (Button) findViewById(R.id.BtnLogin);
-
         progressDialog = new ProgressDialog(this);
-
         ImageView logo = (ImageView) findViewById(R.id.LogoImagen);
         logo.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

@@ -36,6 +36,7 @@
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/verdana"
             android:textSize="32dp"
+            android:text="Recogida de basura en la playa"
             android:textColor="@android:color/background_light" />
 
 
@@ -48,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="350dp"
+        android:text="La contaminación de mares y océanos por residuos de plásticos alcanza niveles realmente preocupantes. La concentración de residuos provoca daños en la vida marina en grandes extensiones de los mares y océanos del planeta. Hoy nos reuniremos a las 12:00 para recoger cualquier tipo de residuo que pueda haber en la playa."
         android:textColor="#3B170B" />
 
     <Button
